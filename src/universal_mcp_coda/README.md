@@ -1,52 +1,11 @@
+# Coda MCP Server
 
-# Universal Mcp Coda MCP Server
-
-An MCP Server for the Universal Mcp Coda API.
-
-## 📋 Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-* Python 3.11+ (Recommended)
-* [uv](https://github.com/astral-sh/uv) installed globally (`pip install uv`)
-
-## 🛠️ Setup Instructions
-
-Follow these steps to get the development environment up and running:
-
-### 1. Sync Project Dependencies
-Navigate to the project root directory (where `pyproject.toml` is located).
-```bash
-uv sync
-```
-This command uses `uv` to install all dependencies listed in `pyproject.toml` into a virtual environment (`.venv`) located in the project root.
-
-### 2. Activate the Virtual Environment
-Activating the virtual environment ensures that you are using the project's specific dependencies and Python interpreter.
-- On **Linux/macOS**:
-```bash
-source .venv/bin/activate
-```
-- On **Windows**:
-```bash
-.venv\\Scripts\\activate
-```
-
-### 3. Start the MCP Inspector
-Use the MCP CLI to start the application in development mode.
-```bash
-mcp dev src/universal_mcp_coda/mcp.py
-```
-The MCP inspector should now be running. Check the console output for the exact address and port.
-
-## 🔌 Supported Integrations
-
-- AgentR
-- API Key (Coming Soon)
-- OAuth (Coming Soon)
+An MCP Server for the Coda API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Universal Mcp Coda API.
+This is automatically generated from OpenAPI schema for the Coda API.
+
 
 | Tool | Description |
 |------|-------------|
@@ -147,27 +106,3 @@ This is automatically generated from OpenAPI schema for the Universal Mcp Coda A
 | `list_pack_featured_docs` | Fetches the featured documents for a specified pack by its ID. |
 | `update_pack_featured_docs` | Updates the featured documents for a specific pack by sending the provided items to the server. |
 | `add_go_link` | Creates a new Go Link resource for the specified organization. |
-
-## 📁 Project Structure
-
-The generated project has a standard layout:
-```
-.
-├── src/                  # Source code directory
-│   └── universal_mcp_coda/
-│       ├── __init__.py
-│       └── mcp.py        # Server is launched here
-│       └── app.py        # Application tools are defined here
-├── tests/                # Directory for project tests
-├── .env                  # Environment variables (for local development)
-├── pyproject.toml        # Project dependencies managed by uv
-├── README.md             # This file
-```
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-_This project was generated using **MCP CLI** — Happy coding! 🚀_
