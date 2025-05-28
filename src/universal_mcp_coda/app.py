@@ -167,7 +167,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to delete the document fails.
 
         Tags:
-            delete, document, management, important, api, http
+            delete, document, management, api, http, important
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -194,7 +194,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to update the document fails.
 
         Tags:
-            update, document, api, metadata, management, important
+            update, document, api, metadata, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -224,7 +224,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request returns an unsuccessful status code.
 
         Tags:
-            get, sharing-metadata, document, api-call, important
+            get, sharing-metadata, document, api-call
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -251,7 +251,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to fetch permissions fails (non-success status code).
 
         Tags:
-            get, permissions, document-management, api-call, important
+            get, permissions, document-management, api-call
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -285,7 +285,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the backend API fails or returns an error response.
 
         Tags:
-            add, permission, management, important, api, post
+            add, permission, management, api, post
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -321,7 +321,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to delete the permission fails or returns an error response.
 
         Tags:
-            delete, permission-management, document, important
+            delete, permission-management, document
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -349,7 +349,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the server fails or returns an unsuccessful status code.
 
         Tags:
-            search, acl, principals, document, api, important
+            search, acl, principals, document, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -374,7 +374,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the HTTP request to retrieve ACL settings fails.
 
         Tags:
-            get, acl, settings, document, management, important
+            get, acl, settings, document, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -408,7 +408,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request fails (e.g., due to invalid permissions, network errors, or the document does not exist).
 
         Tags:
-            update, acl, settings, document, management, important
+            update, acl, settings, document, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -452,7 +452,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to publish the document fails.
 
         Tags:
-            publish, document, api, management, important
+            publish, document, api, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -485,7 +485,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP DELETE request fails with an error status code.
 
         Tags:
-            unpublish, document-management, delete, async-job, important
+            unpublish, document-management, delete, async-job
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -512,7 +512,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the API fails.
 
         Tags:
-            list, pages, pagination, api, important
+            list, pages, pagination, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -556,7 +556,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the API request fails or responds with an unsuccessful status code.
 
         Tags:
-            create, page, management, important
+            create, page, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -591,7 +591,7 @@ class CodaApp(APIApplication):
             requests.exceptions.HTTPError: Raised if the HTTP request to fetch the page fails.
 
         Tags:
-            get, page, document, api, important
+            get, page, document, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -635,7 +635,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to update the page fails (non-2xx response).
 
         Tags:
-            update, page-management, api, important
+            update, page-management, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -672,7 +672,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the HTTP request fails or returns an unsuccessful status code.
 
         Tags:
-            delete, page-management, api, operation, important
+            delete, page-management, api, operation
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -703,7 +703,7 @@ class CodaApp(APIApplication):
             requests.exceptions.HTTPError: Raised if the HTTP request to start the export fails (e.g., due to network issues or invalid parameters).
 
         Tags:
-            export, async-job, start, page, document, management, important
+            export, async-job, start, page, document, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -740,7 +740,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to fetch the export status fails with a non-success status code.
 
         Tags:
-            get, status, export, page, document, ai, important
+            get, status, export, page, document, ai
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -775,7 +775,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the API fails.
 
         Tags:
-            list, tables, document-management, api, important
+            list, tables, document-management, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -813,7 +813,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request for the table details fails.
 
         Tags:
-            get, table, ai, management, important
+            get, table, ai, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -850,7 +850,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to retrieve columns fails with a non-success status code.
 
         Tags:
-            list, columns, table, document, api, metadata, important
+            list, columns, table, document, api, metadata
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -906,7 +906,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to fetch rows fails with a response error status.
 
         Tags:
-            list, rows, table, document, api-call, filtering, pagination, fetch, important
+            list, rows, table, document, api-call, filtering, pagination, fetch
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -952,7 +952,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the API request fails with a non-success status code.
 
         Tags:
-            upsert, rows, batch, table-management, important
+            upsert, rows, batch, table-management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -990,7 +990,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP response indicates an unsuccessful status.
 
         Tags:
-            delete, rows, batch, management, important
+            delete, rows, batch, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1029,7 +1029,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to retrieve the row fails or the server returns an error response.
 
         Tags:
-            get, row, table, fetch, api, important
+            get, row, table, fetch, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1070,7 +1070,7 @@ class CodaApp(APIApplication):
             ValueError: Raised if any required parameter ('docId', 'tableIdOrName', 'rowIdOrName', or 'row') is missing.
 
         Tags:
-            update, row, api, management, important
+            update, row, api, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1109,7 +1109,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to delete the row fails.
 
         Tags:
-            delete, row-management, api, important
+            delete, row-management, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1143,7 +1143,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the API fails or returns an error status code.
 
         Tags:
-            trigger, button-action, table, api, management, important
+            trigger, button-action, table, api, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1179,7 +1179,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the API request fails due to an HTTP error.
 
         Tags:
-            list, formulas, document-management, api, important
+            list, formulas, document-management, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1209,7 +1209,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to fetch the formula fails.
 
         Tags:
-            get, formula, ai, management, important
+            get, formula, ai, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1241,7 +1241,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request fails with an error response from the server.
 
         Tags:
-            list, controls, management, pagination, important
+            list, controls, management, pagination
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1271,7 +1271,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to retrieve the control fails.
 
         Tags:
-            get, control, document, management, important
+            get, control, document, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1298,7 +1298,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to retrieve domain information fails.
 
         Tags:
-            list, domains, management, important
+            list, domains, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1324,7 +1324,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to add the custom document domain fails.
 
         Tags:
-            add, custom-domain, document-management, api, important
+            add, custom-domain, document-management, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1356,7 +1356,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the API response status code indicates an error.
 
         Tags:
-            delete, management, api, doc-domain, important
+            delete, management, api, doc-domain
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1383,7 +1383,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to fetch provider data fails with a non-success status code.
 
         Tags:
-            get, domain, provider, ai, management, important
+            get, domain, provider, ai, management
         """
         if customDocDomain is None:
             raise ValueError("Missing required parameter 'customDocDomain'")
@@ -1406,7 +1406,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to the /whoami endpoint fails or returns an unsuccessful status code.
 
         Tags:
-            whoami, user-info, fetch, api, important
+            whoami, user-info, fetch, api
         """
         url = f"{self.base_url}/whoami"
         query_params = {}
@@ -1430,7 +1430,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request returned an unsuccessful status code.
 
         Tags:
-            resolve, browser-link, get, api, important
+            resolve, browser-link, get, api
         """
         if url is None:
             raise ValueError("Missing required parameter 'url'")
@@ -1459,7 +1459,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the mutation status endpoint fails.
 
         Tags:
-            get, status, mutation, api, important
+            get, status, mutation, api
         """
         if requestId is None:
             raise ValueError("Missing required parameter 'requestId'")
@@ -1488,7 +1488,7 @@ class CodaApp(APIApplication):
             requests.exceptions.HTTPError: Raised if the HTTP request fails with a status error.
 
         Tags:
-            trigger, webhook, automation, api, important
+            trigger, webhook, automation, api
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1521,7 +1521,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request for page analytics fails.
 
         Tags:
-            list, analytics, pages, management, important
+            list, analytics, pages, management
         """
         if docId is None:
             raise ValueError("Missing required parameter 'docId'")
@@ -1559,7 +1559,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request fails or returns a non-success status code.
 
         Tags:
-            list, analytics, summary, docs, api, important
+            list, analytics, summary, docs, api
         """
         url = f"{self.base_url}/analytics/docs/summary"
         query_params = {
@@ -1613,7 +1613,7 @@ class CodaApp(APIApplication):
             requests.exceptions.HTTPError: If the HTTP request to the analytics API fails or returns a non-success status code.
 
         Tags:
-            list, analytics, pack, filter, pagination, management, important
+            list, analytics, pack, filter, pagination, management
         """
         url = f"{self.base_url}/analytics/packs"
         query_params = {
@@ -1662,7 +1662,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the analytics endpoint returns an unsuccessful status code.
 
         Tags:
-            list, analytics, summary, pack, filter, important
+            list, analytics, summary, pack, filter
         """
         url = f"{self.base_url}/analytics/packs/summary"
         query_params = {
@@ -1716,7 +1716,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the underlying HTTP request to the analytics endpoint fails.
 
         Tags:
-            list, analytics, batch, management, important
+            list, analytics, batch, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -1756,7 +1756,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the analytics endpoint fails or returns an error status code.
 
         Tags:
-            get, analytics, status, management, http, important
+            get, analytics, status, management, http
         """
         url = f"{self.base_url}/analytics/updated"
         query_params = {}
@@ -1783,7 +1783,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to fetch workspace members fails.
 
         Tags:
-            list, workspace, members, management, api, important
+            list, workspace, members, management, api
         """
         if workspaceId is None:
             raise ValueError("Missing required parameter 'workspaceId'")
@@ -1814,7 +1814,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to change the user's role fails with an error response from the server.
 
         Tags:
-            change, user-management, role-assignment, api, important
+            change, user-management, role-assignment, api
         """
         if workspaceId is None:
             raise ValueError("Missing required parameter 'workspaceId'")
@@ -1848,7 +1848,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the backend API fails or returns an error status.
 
         Tags:
-            list, roles, permissions, workspace, management, important
+            list, roles, permissions, workspace, management
         """
         if workspaceId is None:
             raise ValueError("Missing required parameter 'workspaceId'")
@@ -1897,7 +1897,7 @@ class CodaApp(APIApplication):
             requests.exceptions.HTTPError: If the HTTP request fails or the server responds with an error status code.
 
         Tags:
-            list, packs, filter, sort, pagination, management, important
+            list, packs, filter, sort, pagination, management
         """
         url = f"{self.base_url}/packs"
         query_params = {
@@ -1941,7 +1941,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the API request fails with an HTTP error response.
 
         Tags:
-            create, pack, management, api, important
+            create, pack, management, api
         """
         request_body = {
             "workspaceId": workspaceId,
@@ -1971,7 +1971,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to the API fails or returns an error status.
 
         Tags:
-            get, pack, api, management, important
+            get, pack, api, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2023,7 +2023,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to update the pack fails.
 
         Tags:
-            update, pack-management, api, important
+            update, pack-management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2063,7 +2063,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to delete the pack fails with an error status code.
 
         Tags:
-            delete, pack-management, async-job, important
+            delete, pack-management, async-job
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2088,7 +2088,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to fetch the schema fails (e.g., network issues, non-2xx response).
 
         Tags:
-            get, configuration, schema, pack, api, important
+            get, configuration, schema, pack, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2115,7 +2115,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the HTTP request to the API fails.
 
         Tags:
-            list, versions, api, management, paginated, important
+            list, versions, api, management, paginated
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2148,7 +2148,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the server fails or returns a non-success status.
 
         Tags:
-            get, version, pack-management, important, ai
+            get, version, pack-management, ai
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2184,7 +2184,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the HTTP request to retrieve the version differences fails.
 
         Tags:
-            get, diff, pack-management, version-control, important
+            get, diff, pack-management, version-control
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2215,7 +2215,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to register the pack version fails (e.g., non-2xx response).
 
         Tags:
-            register, pack-management, async-job, important
+            register, pack-management, async-job
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2254,7 +2254,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request fails or an error response is returned by the server.
 
         Tags:
-            upload-complete, pack-management, post, api, important
+            upload-complete, pack-management, post, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2291,7 +2291,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to create the release fails.
 
         Tags:
-            create, pack-release, management, important
+            create, pack-release, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2325,7 +2325,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the backend API fails.
 
         Tags:
-            list, pack-releases, api, management, important
+            list, pack-releases, api, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2358,7 +2358,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request fails or returns a non-success status code.
 
         Tags:
-            update, pack-management, release, api, important
+            update, pack-management, release, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2394,7 +2394,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to update the OAuth configuration fails.
 
         Tags:
-            set, oauth-config, management, important
+            set, oauth-config, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2425,7 +2425,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to retrieve the OAuth configuration fails (non-success status code).
 
         Tags:
-            get, oauth-config, pack, management, important
+            get, oauth-config, pack, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2451,7 +2451,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to set the system connection fails.
 
         Tags:
-            set, system-connection, pack, management, api, important
+            set, system-connection, pack, management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2482,7 +2482,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the backend fails or returns an error status.
 
         Tags:
-            get, system-connection, pack, management, important
+            get, system-connection, pack, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2507,7 +2507,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to retrieve permissions fails.
 
         Tags:
-            get, permissions, pack, important, ai, management
+            get, permissions, pack, ai, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2534,7 +2534,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the API request fails with an HTTP error status.
 
         Tags:
-            add, permission, pack-management, api, important
+            add, permission, pack-management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2569,7 +2569,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to delete the permission fails.
 
         Tags:
-            delete, permission-management, important
+            delete, permission-management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2596,7 +2596,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to retrieve makers fails.
 
         Tags:
-            list, pack, makers, api, important
+            list, pack, makers, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2622,7 +2622,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the POST request to the server returns an unsuccessful status code.
 
         Tags:
-            add, maker, packs, management, important
+            add, maker, packs, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2654,7 +2654,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request fails or returns an unsuccessful status code.
 
         Tags:
-            delete, pack-management, maker-management, important
+            delete, pack-management, maker-management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2681,7 +2681,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to retrieve categories fails.
 
         Tags:
-            list, categories, pack, api, management, important
+            list, categories, pack, api, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2707,7 +2707,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the API fails or returns an error status.
 
         Tags:
-            add, category, pack-management, api, important
+            add, category, pack-management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2739,7 +2739,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to delete the category fails.
 
         Tags:
-            delete, management, category, important
+            delete, management, category
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2772,7 +2772,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the server returns a non-successful status code in response to the upload request.
 
         Tags:
-            upload, asset-management, pack, async-job, important
+            upload, asset-management, pack, async-job
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2817,7 +2817,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to upload source code fails (e.g., network issues or server errors).
 
         Tags:
-            upload, pack-management, api, important
+            upload, pack-management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2856,7 +2856,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to mark the upload complete fails.
 
         Tags:
-            mark-complete, upload, asset-management, post-request, important
+            mark-complete, upload, asset-management, post-request
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2890,7 +2890,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the backend fails or returns an error status code.
 
         Tags:
-            upload-complete, pack-management, ai, important
+            upload-complete, pack-management, ai
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2927,7 +2927,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the server fails.
 
         Tags:
-            get, source-code, packs, version-management, important
+            get, source-code, packs, version-management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -2982,7 +2982,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to the packs listing endpoint returns an unsuccessful status code.
 
         Tags:
-            list, packs, filter, search, api, management, important
+            list, packs, filter, search, api, management
         """
         url = f"{self.base_url}/packs/listings"
         query_params = {
@@ -3035,7 +3035,7 @@ class CodaApp(APIApplication):
             HTTPError: If the HTTP request to retrieve the pack listing fails.
 
         Tags:
-            get, listing, packs, api, important
+            get, listing, packs, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3090,7 +3090,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to retrieve logs fails (e.g., due to network error or server rejection).
 
         Tags:
-            list, logs, pack-management, filter, pagination, important
+            list, logs, pack-management, filter, pagination
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3155,7 +3155,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to the API endpoint fails with a non-success status code.
 
         Tags:
-            list, logs, management, async-job, filter, important
+            list, logs, management, async-job, filter
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3215,7 +3215,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the underlying HTTP request fails or returns an unsuccessful status code.
 
         Tags:
-            list, logs, grouped, filter, pagination, important
+            list, logs, grouped, filter, pagination
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3274,7 +3274,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the server fails or returns an unsuccessful status code.
 
         Tags:
-            list, ingestion-logs, filter, pagination, ai, important
+            list, ingestion-logs, filter, pagination, ai
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3344,7 +3344,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: If the HTTP request to the backend service fails or returns a non-2xx status code.
 
         Tags:
-            list, ingestion, executions, batch, search, management, important
+            list, ingestion, executions, batch, search, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3404,7 +3404,7 @@ class CodaApp(APIApplication):
             HTTPError: Raised if the HTTP request for the execution attempts fails.
 
         Tags:
-            list, ingestion, execution-attempts, management, important
+            list, ingestion, execution-attempts, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3445,7 +3445,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to fetch log details fails or returns a non-2xx response.
 
         Tags:
-            get, log, details, fetch, ai, management, important
+            get, log, details, fetch, ai, management
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3477,7 +3477,7 @@ class CodaApp(APIApplication):
             ValueError: If 'packId' is None.
 
         Tags:
-            list, featured-docs, packs, api-call, important
+            list, featured-docs, packs, api-call
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3503,7 +3503,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to update the featured documents fails.
 
         Tags:
-            update, featured-docs, pack-management, api, important
+            update, featured-docs, pack-management, api
         """
         if packId is None:
             raise ValueError("Missing required parameter 'packId'")
@@ -3547,7 +3547,7 @@ class CodaApp(APIApplication):
             requests.HTTPError: Raised if the HTTP request to create the Go Link fails (e.g., due to network errors or API validation errors).
 
         Tags:
-            add, go-link, management, api, important
+            add, go-link, management, api
         """
         if organizationId is None:
             raise ValueError("Missing required parameter 'organizationId'")
