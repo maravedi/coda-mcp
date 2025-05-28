@@ -1,10 +1,10 @@
-# Coda MCP Server
+# CodaApp MCP Server
 
-An MCP Server for the Coda API.
+An MCP Server for the CodaApp API.
 
 ## 🛠️ Tool List
 
-This is automatically generated from OpenAPI schema for the Coda API.
+This is automatically generated from OpenAPI schema for the CodaApp API.
 
 
 | Tool | Description |
