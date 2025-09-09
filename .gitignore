@@ -38,3 +38,5 @@ dump/
 
 # Local config
 local_config.json
+
+*~
